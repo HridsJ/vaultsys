@@ -1,0 +1,226 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vault Sys</title>
+    <meta name="title" content="Sky - Nav" />
+    <meta
+      name="description"
+      content="."
+    />
+
+    <!--establish early connectection with goog -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <!-- use cross origin coz google fonts be like that sometimes-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!--load bebas neue-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--
+        preload to prevent load delays, use fonts from assests, woff2 is extension for web font format supporter
+        by chrome, cross origin because we may need to load fonts form different domains
+        nonsense name to prevent caching
+    -->
+    <link
+      rel="preload"
+      href="/assets/opensauce-medium-DHCY1jhb.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
+    <!--load animations and my css file-->
+    <script type="module" src="/assets/mainjs.js"></script>
+    <link rel="stylesheet" href="/assets/maincss.css">
+  </head>
+
+  <body>
+    <main class="home" data-scroll-container>
+
+      <br><br><br><br><br><br>
+      <!-- MAIN HEADING SECTION -->
+      <section class="home__hero">
+        <div class="hero__title">
+          <h1 class="mobile">
+            VAULT <br />
+            —— SYS
+          </h1>
+          <h1 class="hero__title__top overflow desktop">
+            <div class="hero__title__top" title-overflow>
+              <span
+                class="hero__title__left"
+                data-scroll=""
+                data-scroll-direction="horizontal"
+                data-scroll-position="top"
+                data-scroll-speed="7"
+              >
+                <span class="hero__hover">V</span>
+                <span class="hero__hover">A</span>
+                <span class="hero__hover">U</span>
+                <span class="hero__hover">L</span>
+                <span class="hero__hover">T</span>
+              </span>
+              <span class="hero__title__dash desktop">——</span>
+              <span class="hero__title__dash tablet">——</span>
+
+              <span
+                class="hero__title__right"
+                data-scroll=""
+                data-scroll-direction="horizontal"
+                data-scroll-position="top"
+                data-scroll-speed="-7"
+              >
+                <span class="hero__hover">S</span>
+                <span class="hero__hover">Y</span>
+                <span class="hero__hover">S</span>
+              </span>
+            </div>
+          </h1>
+          <!-- <br><br><br><br><br><br><br><br><br><br><br><br> -->
+          <!-- front title -->
+          <span class="hero__title__bottom overflow">
+            <div class="hero__title__bottom">
+              <!-- bottom description -->
+              <div class="bottom__right">
+                <p class="hero__paragraph">
+                  <span class="first-word">About</span> &nbsp;    
+                  It is an anti-theft solution for lockers, combining hardware and software to deliver 
+                  a security system that alerts users in real-time if their locker is accessed
+                </p>
+              </div>
+            </div>
+          </span>
+
+        </div>
+      </section>
+
+      <!-- line  -->
+      <section class = "home__projects">
+        <span class="home__projects__line right">
+          <span></span>
+        </span>
+      </section>
+
+      <!-- Details, Future -->
+      <section class="home__content">
+        <h2 class="home__content__title">Some details about Vault Sys</h2>
+        <p class="home__content__desc">
+          Sys is a smart anti-theft solution for lockers, combining hardware and software to deliver a security 
+          system that alerts users in real-time if their locker is accessed. Our system is powered by Arduino and 
+          MUX switches for precision circuit management, and it integrates seamlessly with a mobile app for user 
+          notifications and reporting suspicious activity.
+        </p>
+
+        <br><br><br><br>
+
+        <h2 class="home__content__title">THE PROBLEM</h2>
+        <p class="home__content__desc">
+          Locker thefts are a common problem, yet traditional locks fail to provide robust protection 
+          or real-time monitoring. We wanted to build something smarter—something that goes beyond a 
+          simple lock, giving students and admins peace of mind and true control.
+        </p>
+
+      </section>
+
+      <!-- Try our stuff out section -->
+      <section class="home__projects">
+        <!-- line 1 -->
+        <span class="home__projects__line left">
+          <span></span>
+        </span>
+
+        <!-- Try our tool out-->
+        <div class="home__projects__project">
+          <!--
+          put the link for new website here in href bro
+          -->
+          <a
+            href="/Location_page.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="home__projects__project__link"
+          >
+            <h1
+              class="home__projects__project__title"
+              data-scroll=""
+              data-scroll-direction="horizontal"
+              data-scroll-speed="8"
+            >
+              <span class="inline-ovh">
+                <div class="title__main right">
+                  <span
+                    class="slide-up"
+                    data-content="TRY OUR TOOL OUT!"
+                    aria-hidden="true"
+                  ></span>
+                  TRY OUR TOOL OUT!
+                </div>
+              </span>
+            </h1>
+          </a>
+
+          <!-- mobile version -->
+          <div class="project__link">
+            <a
+              href="/Location_page.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="c-button"
+            >
+              <span class="c-link">
+                <span class="c-link__inner">
+                  <span>
+                    Visit Site
+                    <span class="share-icon"
+                      ><svg
+                        width="20"
+                        height="20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M13.337 7.845l-7.173 7.173-1.178-1.179 7.172-7.172H5.837V5h9.166v9.167h-1.666V7.845z"
+                          fill="#777"
+                        /></svg
+                    ></span>
+                  </span>
+                </span>
+              </span>
+            </a>
+          </div>
+        </div>
+
+        <!-- line 3 -->
+        <span class="home__projects__line left">
+          <span></span>
+        </span>
+
+      </section>
+
+      <!-- email -->
+      <section class="home__content">
+        <div class="home__contact__email">
+          <button class="email">VAULTSYS@GMAIL.COM</button>
+          <div class="to-copy">
+            <span>Click to Copy email</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- line  -->
+      <section class = "home__projects">
+        <span class="home__projects__line right">
+          <span></span>
+        </span>
+      </section>
+
+
+    </main>
+
+  </body>
+</html>
